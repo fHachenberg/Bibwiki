@@ -1,0 +1,19 @@
+== ToDo ==
+
+* umbennen auch nicht
+
+* integrate citation counts from Google Scholar
+* integrate WorldCat
+* integrate ISI
+* make more library schemes
+* add "view by journals"
+* make exporting (much more) easier
+* use mediawiki's image repository for uploaded documents
+* groupware stuff: add ranking facilities
+* more documentation
+* rewrite quick'n'dirty code 
+* add SQL layer for
+** sorting
+** better (e.g. global) searching
+** version history of bibliographies
+* make Bibwiki faster

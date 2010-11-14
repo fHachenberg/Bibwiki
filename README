@@ -1,0 +1,30 @@
+BIBWIKI - Another bibliography managament system                          
+                                                                         
+Last change of this file: 2008-01
+
+
+
+ABOUT BIBWIKI
+
+Bibwiki is an extension for Mediawiki to create and manage
+scientific bibliographies. The bibliographies are stored in 
+plain text files in the common BibTeX format. With Bibwiki 
+it's easy to:
+
+    * import from Ex Libris Aleph, Amazon, ArXiv,
+      Proquest/CSA databases and many more;
+    * manage digital documents (PDF files, web pages, etc.);
+    * export lists of references via BibTeX; 
+    * create lists of references in Mediawiki articles. 
+
+
+
+HOMEPAGE
+
+http://www.serenethinking.com/bibwiki
+
+
+
+MAINTAINER
+
+Wolfgang Plaschg, <wolfgang.plaschg@gmail.com>

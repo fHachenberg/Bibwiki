@@ -1,0 +1,6 @@
+*.swp
+*.bib
+BibwikiSettings.php
+__phpdoc.bat
+docs
+sp

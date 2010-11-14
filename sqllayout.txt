@@ -1,0 +1,104 @@
+bibwiki_info
+	version
+	
+bibwiki_bibfile
+	f_id
+	filename
+	timestamp
+	owner
+	group
+	permissions
+	
+bibwiki_data
+	f_id
+	bib_id
+	bibkey
+	active
+	timestamp
+	
+	text
+
+	type
+	author
+	editor
+	title
+	publisher
+	journal
+	year
+	citations
+	rating
+	bibdate
+	creator
+	owner
+	
+SQL
+
+
+CREATE TABLE bibwiki_bw_data (
+	bib_id int unsigned NOT NULL,
+	bib_revid int unsigned NOT NULL,
+
+	bib_key varchar(255) NOT NULL,
+    bib_timestamp varbinary(14) NOT NULL,
+    
+    bib_data BLOB,
+    bib_html_compact_data TEXT,
+    bib_html_detailed_data TEXT,
+    bib_html_bibtex_data TEXT,
+    bib_search_data TEXT,
+
+    bib_type varchar(255),
+    bib_firstauthor varchar(255),
+    bib_firsteditor varchar(255),
+    bib_title TEXT,
+    bib_journal TEXT,
+	bib_isbn varchar(255),
+    bib_year int unsigned,
+    bib_bibdate varbinay(14),
+    bib_creator_id int unsigned,
+    
+	PRIMARY KEY data_key (bib_id, bib_revid),
+	
+	INDEX (f_id, bib_timestamp),
+	INDEX (f_id, bib_type),
+	INDEX (f_id, bib_firstauthor),
+	INDEX (f_id, bib_firsteditor),
+	INDEX (f_id, bib_title),
+	INDEX (f_id, bib_journal),
+	INDEX (f_id, bib_year),
+	INDEX (f_id, bib_bibdate),
+	FULLTEXT (bib_search_data)
+)
+
+CREATE TABLE bibwiki_bw_keywords (
+	bib_id int unsigned NOT NULL,
+	bib_revid int unsigned NOT NULL,
+	bib_keyword varchar(255)
+
+	PRIMARY KEY data_id (bib_id, bib_rev, bib_keyword),
+)
+
+
+CREATE TABLE bibwiki_bw_olddata (
+	bib_id int unsigned NOT NULL,
+	bib_revid int unsigned NOT NULL,
+
+	bib_key varchar(255) NOT NULL,
+    bib_timestamp varbinary(14) NOT NULL default '',
+    
+    bib_data BLOB,
+    bib_html_data TEXT,
+    bib_search_data TEXT,
+    
+    bib_type varchar(255),
+    bib_firstauthor varchar(255),
+    bib_firsteditor varchar(255),
+    bib_title TEXT,
+    bib_journal TEXT,
+    bib_publisher TEXT,
+    bib_year int unsigned,
+    bib_bibdate varbinay(14),
+    bib_creator_id int,
+    
+	PRIMARY KEY data_id (f_id, bib_key, bib_revid),
+)

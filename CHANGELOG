@@ -1,0 +1,79 @@
+
+= Bibwiki release notes =
+
+== Recent changes ==
+
+= 0.99e =
+
+= 0.99d =
+
+*    12.2007 - a lot of code rewriting, bug fixing etc.
+* 02.12.2007 - integrate OSBiB
+* 02.12.2007 - integrate Cite.php
+* 02.12.2007 - compact view of bibliography
+
+= 0.99c =
+
+* 05.11.2007 - fixed: search string for ISBN links in scheme "AT Vienna -- UB"
+* 05.11.2007 - new library scheme "US Washington -- LoC"
+* 05.11.2007 - moved tab links to sidebar "bibwiki toolbox" 
+* 05.11.2007 - fixed: $wgDefaultBib opened if nothing else specified
+* 05.11.2007 - fixed: check if $wgTitleLinkTags is empty
+* 05.11.2007 - fixed: check if $wgISBNLinkTags is empty
+* 20.10.2007 - added LoC import feature
+* 19.10.2007 - per-user bibliographies
+* 19.10.2007 - added bibliography dropdown box in record creation page
+* 14.10.2007 - fixed some minor bugs
+* 14.10.2007 - added ArXiv library settings
+* 14.10.2007 - added ArXiv import feature
+* 12.10.2007 - "arxiv" tags are linked to ArXiv
+* 10.10.2007 - fixed wfRenderBibliographyTitle
+* 10.10.2007 - Bibwiki can deal with empty file now
+* 07.10.2007 - integrated Mediawiki's group management in Bibwiki
+* 07.10.2007 - "file", "pdf" are aliases for "docname"
+* 07.10.2007 - using Mediawikis internationalisation
+* 07.10.2007 - updated for Mediawiki 1.11
+* 07.10.2007 - new class Bibliography
+
+= 0.99b =
+
+* 09.06.2007 - fixed bottom navbar error
+* 08.06.2007 - fixed user CSS 
+* 08.06.2007 - fixed key non-uniqueness bug
+* 07.06.2007 - fixed docname delimiters
+* 07.06.2007 - fixed <Title>-translation in saveUrl()
+* 30.05.2007 - added settings checks
+* 18.05.2007 - added language settings
+* 18.05.2007 - added library settings
+* 17.05.2007 - fixed special char keyword conversion in opac import
+* 17.05.2007 - added $wgTitleLinkTags
+* 25.04.2007 - automatic delimiter conversion
+* 19.04.2007 - $wgConvertSpecialCharsToTeXCommands implemented
+* 15.04.2007 - action "save_settings" implemented
+* 14.04.2007 - action "load_settings" implemented
+* 14.04.2007 - warning message appears if default password is used
+* 09.04.2007 - apdated Special:Search, searches through all .bib-files in 
+               $wgBibPath
+* 06.04.2007 - added "export from document" feature
+* 06.04.2007 - current Bibfile is also stored in cookie "BIBWIKI_BIBFILE"
+* 06.04.2007 - diacritics in docname will be translated to normal ASCII
+               characters
+* 01.01.2007 - doi numbers are now linked
+* 01.01.2007 - sanity checks in export() added
+* 01.01.2007 - fixed spacing in viewStatistics()
+* 01.01.2007 - export() reports BibTeX errors
+* 01.01.2007 - fixed export(): missing hidden field "action=export" inserted
+* 01.01.2007 - fixed wpl.bst and sws.bst
+* 01.01.2007 - bbl2html.pl rewritten to PHP code and integrated in Bibwiki.php
+* 01.01.2007 - fixed removeOldBackups()
+* 01.01.2007 - fixed filter splitting
+* 01.01.2007 - re-fixed convertPublisher()
+* 01.01.2007 - fixed UTF8 conversation in URL import
+* 01.01.2007 - fixed getBibfileName()
+* 01.01.2007 - Bibwiki can now deal with @Book(...) entries
+* 01.01.2007 - added $wgValueDelim... and $wgTitleDelim... to define Delimiters
+* 01.01.2007 - fixed URL import
+* 01.01.2007 - fixed getBibfileName
+* 01.01.2007 - encapsulated access functions to bibfile, which leads to slimmer
+               view...() functions and reduces bugs.
+* 01.01.2007 - completed redesign to a MediaWiki extension.
