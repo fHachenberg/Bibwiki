@@ -684,7 +684,7 @@ class Bibitem {
 						if ($build_delims) {
 							$isdelim[] = true;
 							$leftdelim[] = '"';
-							array_unshift($rightdselim, '"');
+							array_unshift($rightdelim, '"');
 						}
 						else
 							$isdelim[] = false;
