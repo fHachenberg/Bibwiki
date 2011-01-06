@@ -477,7 +477,7 @@ function wfBibCite() {
 				if ($rv === false) break;
 	
 				# make key for return array			
-				$key = strtolower($bibfile->getName()."/".$rv["key"]);
+				$key = $bibfile->getName()."/".strtolower($rv["key"]);
 				
 				if (isset($CiteKeys[$key]) and $CiteKeys[$key] > 0) {
 					#found
