@@ -564,7 +564,11 @@ function bwParseAuthor($val) {
 	$rv["surname_simplified"] = bwDiacriticsSimplify($rv["surname"]);
 	$rv["firstname_simplified"] = bwDiacriticsSimplify($rv["firstname"]);
 	$rv["firstnames_simplified"] = bwDiacriticsSimplify($rv["firstnames"]);
-	$rv["middlename_simplified"] = bwDiacriticsSimplify($rv["middlename"]);
+	#we have to check whether a middle name was provided in the bibtex entry
+	if(array_key_exists("middlename", $rv))
+		$rv["middlename_simplified"] = bwDiacriticsSimplify($rv["middlename"]);
+	else
+		$rv["middlename_simplified"] = "";
 
 	#print (htmlentities($rv["surname"])."<br>");
 	#print ($rv["surname_simplified"]."<br>");
